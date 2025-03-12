@@ -1,6 +1,6 @@
 async function cadUser(){
     let name = "USER"
-    let email = "zineddine4564@uorak.com"
+    let email = "albas100@uorak.com"
     let userType = 1
     let password = "senhaDoUser01@"
     let cpf_cnpj = "000.000.000-00"
