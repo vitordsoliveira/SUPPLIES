@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO</title>
+
+    <!-- Links do CSS para o bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    
+    <!-- Linpara para o arquivo CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--<link rel="stylesheet" href="CSS/reset.css">-->
+
+    <!--Link para o arquivo JS-->
+    <script src="JS/user.js"></script>
+</head>
+<body>
+    <!--BOTÃO PARA ATIVAR A FUNÇÃO CADASTRO DE USUARIO-->
+    
+    <!--<input type="button" value="Cadastrar" onclick="cadUser()">-->
+    
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+              <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                <div class="card-body p-4 p-md-5">
+                  <div class="img">
+                    <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">CADASTRO</h3>
+                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdNEX_1LI1PDnXLJ74QPeOC5OY-qVQd5_vw&s" alt="">
+                  </div>
+                  
+                  <form>
+      
+                    <div class="row">
+
+                      <div class="col-md-12 mb-4">
+      
+                        <div data-mdb-input-init class="form-outline">
+                          <label class="form-label" for="firstName">Nome: </label>
+                          <input type="text" id="IDname" class="form-control form-control-lg" />
+                        </div>
+      
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div data-mdb-input-init class="form-outline">
+                          <label class="form-label" for="emailAddress">Email: </label>
+                          <input type="email" id="IDemail" class="form-control form-control-lg" />
+                        </div>
+      
+                      </div>
+
+                      <div class="col-md-6 mb-4">
+      
+                        <h6 class="mb-2 pb-1">CPF: </h6>
+      
+                        <div data-mdb-input-init class="form-outline datepicker w-100">
+                            <input type="text" class="form-control form-control-lg" id="IDcpf_cnpj" />
+                          </div>
+                      </div>
+
+                    </div>
+      
+                    <div class="row">
+                      <div class="col-md-6 mb-4 d-flex align-items-center">
+      
+                        <div data-mdb-input-init class="form-outline datepicker w-100">
+                          <label for="birthdayDate" class="form-label">Birthday</label>
+                          <input type="text" class="form-control form-control-lg" id="IDbirthday" />
+                        </div>
+      
+                      </div>
+
+
+                      <div class="col-md-6 mb-4">
+      
+                        <div data-mdb-input-init class="form-outline">
+                          <label class="form-label" for="password">Senha: </label>
+                          <input type="password" id="IDpassword" class="form-control form-control-lg" />
+                        </div>
+
+                      </div>
+
+                      
+
+                    </div>
+                      
+                    <div class="row">
+                      <div class="col-12">
+                      </div>
+                    </div>
+      
+                    <div class="mt-4 pt-2">
+                      <input data-mdb-ripple-init class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                    </div>
+      
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

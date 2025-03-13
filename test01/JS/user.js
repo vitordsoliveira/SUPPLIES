@@ -1,11 +1,11 @@
 async function cadUser(){
-    let name = "USER"
-    let email = "albas100@uorak.com"
+    let name = IDname
+    let email = IDemail
     let userType = 1
-    let password = "senhaDoUser01@"
-    let cpf_cnpj = "000.000.000-00"
+    let password = IDpassword
+    let cpf_cnpj = IDcpf_cnpj
     let termos = 1
-    let birthday = "2004-04-07"
+    let birthday = IDbirthday
 
     dados = {        
         "name": name,
