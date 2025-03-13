@@ -95,8 +95,9 @@
                             <!-- Lista de requisitos -->
                             <ul id="passwordRequirements">
                               <li id="charCount" style="color: red;">Pelo menos 8 caracteres</li>
-                              <li id="specialChar" style="color: red;">Pelo menos um caractere especial</li>
-                              <li id="number" style="color: red;">Pelo menos um número</li>
+                              <li id="specialChar" style="color: red;">Caractere especial</li>
+                              <li id="number" style="color: red;">Número</li>
+                              <li id="herCharM" style="color: red;">Letra Maiuscúla</li>
                             </ul>
 
                             <script>
@@ -126,6 +127,7 @@
                                     var isValidLength = password.length >= 8;
                                     var hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
                                     var hasNumber = /\d/.test(password);
+                                    var hasCharM = /[A-Z]/.test(password); // Verifica se há pelo menos uma letra maiúscula
 
                                     // Atualiza a cor e o status para cada requisito
                                     // Validação do comprimento
@@ -148,7 +150,17 @@
                                     } else {
                                       document.getElementById('number').style.color = 'red';
                                     }
+
+                                     // Validação do número
+                                      if (hasNumber) {
+                                      document.getElementById('hasCharM').style.color = 'green';
+                                    } else {
+                                      document.getElementById('hasCharM').style.color = 'red';
+                                    }
+                                  
                                   });
+
+                                  
                           </script>
                         </div>
                       </div>
