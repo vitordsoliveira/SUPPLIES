@@ -85,13 +85,20 @@
 
                         <div class="col-md-6 mb-4">
 
-                          <label for="birthdayDate" class="form-label">Senha </label>
+                          <label for="password" class="form-label">Senha </label>
                           <div class="input-group">
                             <input type="password" id="IDpassword" class="form-control form-control-lg" />
                             <button type="button" id="togglePassword" class="btn">
                               <img src="IMG/viewPass.png" alt="">
                             </button>
-                      
+
+                            <!-- Lista de requisitos -->
+                            <ul id="passwordRequirements">
+                              <li id="charCount" style="color: red;">Pelo menos 8 caracteres</li>
+                              <li id="specialChar" style="color: red;">Pelo menos um caractere especial</li>
+                              <li id="number" style="color: red;">Pelo menos um número</li>
+                            </ul>
+
                             <script>
                               // Seleciona o input de senha e o botão
                               const password = document.getElementById('IDpassword');
@@ -110,6 +117,38 @@
                                       toggleButton.innerHTML = '<img class="view" src="IMG/viewPass.png" alt="">';
                                   }
                               });
+
+                                // Função para validar a senha
+                                document.getElementById('IDpassword').addEventListener('input', function () {
+                                    var password = this.value;
+
+                                    // Verificações individuais
+                                    var isValidLength = password.length >= 8;
+                                    var hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+                                    var hasNumber = /\d/.test(password);
+
+                                    // Atualiza a cor e o status para cada requisito
+                                    // Validação do comprimento
+                                    if (isValidLength) {
+                                      document.getElementById('charCount').style.color = 'green';
+                                    } else {
+                                      document.getElementById('charCount').style.color = 'red';
+                                    }
+
+                                    // Validação do caractere especial
+                                    if (hasSpecialChar) {
+                                      document.getElementById('specialChar').style.color = 'green';
+                                    } else {
+                                      document.getElementById('specialChar').style.color = 'red';
+                                    }
+
+                                    // Validação do número
+                                    if (hasNumber) {
+                                      document.getElementById('number').style.color = 'green';
+                                    } else {
+                                      document.getElementById('number').style.color = 'red';
+                                    }
+                                  });
                           </script>
                         </div>
                       </div>
