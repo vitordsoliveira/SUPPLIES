@@ -1,54 +1,79 @@
-    .backgroundRegister {    /*Background para a aba de registro*/
-        background-image: url('../IMG/backgroundRegister2.jpg');
-        background-size: cover; /* A imagem vai cobrir todo o fundo */
-        background-position: center; /* A imagem vai ficar centralizada */
-        background-repeat: no-repeat; /* A imagem não vai se repetir */
-    
+li {
+    list-style-type: none;
+}
+
+/*############################## REGISTER FORM #####################################*/
+
+.backgroundRegister {
+    /*Background para a aba de registro*/
+    background-image: url('../IMG/backgroundRegister2.jpg');
+    background-size: cover;
+    /* A imagem vai cobrir todo o fundo */
+    background-position: center;
+    /* A imagem vai ficar centralizada */
+    background-repeat: no-repeat;
+    /* A imagem não vai se repetir */
+
     /* Chrome 10-25, Safari 5.1-6 */
     /*background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));*/
-    
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /*background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))*/
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+/*Ajustes da logo*/
+.logoRegister {
+    display: flex;
+}
+
+.logoRegister img {
+    margin-left: 58%;
+    margin-top: -5%;
+    width: 18%;
+}
+
+/*Modificações no button "Cadastrar {cadUser()}"*/
+.btnCadUser {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.passwordRqrDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 18%;
+}
+
+@media (min-width: 768px) {
+    .p-md-5 {
+        padding: 2rem !important;
     }
-    
-    .card-registration .select-input.form-control[readonly]:not([disabled]) {
-        font-size: 1rem;
-        line-height: 2.15;
-        padding-left: .75em;
-        padding-right: .75em;
-    }
+}
 
-    /*Ajustes da logo*/
-    .logoRegister{
-        display: flex;
-    }
+/*###########################################  INITAL PAG ###########################################################*/
 
-    .logoRegister img {
-        margin-left: 58%;
-        margin-top: -5%;
-        width: 18%;
-    }
+.buttonRL a {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 8px;
+    text-decoration: none;
+}
 
-    /*Modificações no button "Cadastrar {cadUser()}"*/
-    .btnCadUser{
-        color: white;
-        background-color: black;
-        border-radius: 5px;
-        padding: 8px;
-    }
+.loginregister ul{
+    display: flex;
+}
 
-    .passwordRqrDiv{
-        display: flex; 
-        justify-content: flex-end; 
-        align-items: flex-start;
-        margin-right: 18%;
-    }
-
-    @media (min-width: 768px) {
-        .p-md-5 {
-            padding: 2rem !important;
-        }
-    }
-
-
-
+.loginregister ul li{
+    margin-left: 15px;
+}
