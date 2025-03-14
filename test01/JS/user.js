@@ -1,13 +1,22 @@
-async function cadUser(){
-    let name = IDname
-    let email = IDemail
-    let userType = 1
-    let password = IDpassword
-    let cpf_cnpj = IDcpf_cnpj
-    let termos = 1
-    let birthday = IDbirthday
+document.addEventListener('DOMContentLoaded', function() {
+    // Adiciona o evento submit ao formulário
+    const form = document.getElementById('userRegisterForm');
+    form.addEventListener('submit', async function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+        await cadUser(); // Chama a função cadUser
+    });
+});
 
-    dados = {        
+async function cadUser() {
+    let name = document.getElementById('IDname').value;
+    let email = document.getElementById('IDemail').value;
+    let userType = 1;
+    let password = document.getElementById('IDpassword').value;
+    let cpf_cnpj = document.getElementById('IDcpf_cnpj').value;
+    let termos = 1;
+    let birthday = document.getElementById('IDbirthday').value;
+
+    let dados = {        
         "name": name,
         "email": email,
         "user_type_id": userType,
@@ -15,25 +24,25 @@ async function cadUser(){
         "cpf_cnpj": cpf_cnpj,
         "terms": termos,
         "birthday": birthday
-    }
+    };
+
+    console.log("Dados enviados:", dados); // Adicione esta linha para verificar os dados
 
     let api = await fetch(
-        "https://go-wash-api.onrender.com/api/user",{
-            method:"POST",
-            body:JSON.stringify(dados),
-            headers:{
-                'Content-Type':'application/json'
+        "https://go-wash-api.onrender.com/api/user", {
+            method: "POST",
+            body: JSON.stringify(dados),
+            headers: {
+                'Content-Type': 'application/json'
             }
         }
     );
-    if(api.ok){
-        let response = await api.json()
+    
+    if (api.ok) {
+        let response = await api.json();
         console.log(response);
-        return
+        return;
     }
-    let responseError = await api.json()
+    let responseError = await api.json();
     console.log(responseError);
 }
-        
-    
-

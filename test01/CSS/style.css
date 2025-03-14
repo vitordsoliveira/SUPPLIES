@@ -37,5 +37,18 @@
         padding: 8px;
     }
 
+    .passwordRqrDiv{
+        display: flex; 
+        justify-content: flex-end; 
+        align-items: flex-start;
+        margin-right: 18%;
+    }
+
+    @media (min-width: 768px) {
+        .p-md-5 {
+            padding: 2rem !important;
+        }
+    }
+
 
 
