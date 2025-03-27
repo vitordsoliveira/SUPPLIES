@@ -1,19 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Adiciona o evento submit ao formulário
-    const form = document.getElementById('userRegisterForm');
-    form.addEventListener('submit', async function(event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
-        await cadUser(); // Chama a função cadUser
-    });
-});
-
 async function cadUser() {
     let name = document.getElementById('IDname').value;
+
     let email = document.getElementById('IDemail').value;
+
     let userType = 1;
+
     let password = document.getElementById('IDpassword').value;
+
     let cpf_cnpj = document.getElementById('IDcpf_cnpj').value;
+
     let termos = 1;
+
     let birthday = document.getElementById('IDbirthday').value;
 
     let dados = {        
@@ -26,15 +23,14 @@ async function cadUser() {
         "birthday": birthday
     };
 
+    url = "https://go-wash-api.onrender.com/api/user"
+
     console.log("Dados enviados:", dados); // Adicione esta linha para verificar os dados
 
-    let api = await fetch(
-        "https://go-wash-api.onrender.com/api/user", {
+    let api = await fetch(url ,{
             method: "POST",
             body: JSON.stringify(dados),
-            headers: {
-                'Content-Type': 'application/json'
-            }
+            headers:{'Content-Type': 'application/json'}
         }
     );
     
