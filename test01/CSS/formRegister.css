@@ -1,0 +1,45 @@
+/*############################## REGISTER FORM #####################################*/
+
+.backgroundRegister {
+    /* Background para a aba de registro */
+    background-image: url('../IMG/backgroundRegister2.jpg');
+    background-size: cover; /* A imagem vai cobrir todo o fundo */
+    background-position: center; /* A imagem vai ficar centralizada */
+    background-repeat: no-repeat; /* A imagem não vai se repetir */
+    width: 100%; /* Largura 100% da tela */
+    height: 100vh; /* Altura 100% da altura da janela */
+}
+
+/*Ajustes da logo, para ficar ao lado do titulo*/
+.logoRegister ul {
+    display: flex;
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+}
+
+.logoRegister li {
+    list-style-type: none; /* Remove os pontos das listas */
+    display: flex; /* Para alinhar o texto e a imagem na mesma linha */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.logoRegister li:nth-child(2){
+    width: 15%;
+    margin-left: 65%;
+    margin-top: -8%;
+}
+
+/* Modificações no button "Cadastrar {cadUser()}" */
+.btnCadUser {
+    color: white; /* Cor da letra do botão */
+    background-color: black; /* Cor do botão */
+    border-radius: 5px; /* Arredondamento do botão */
+    padding: 8px; /* Tamanho do botão */
+}
+
+.passwordRqrDiv { /* Ajustes para os required da password */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 18%;
+}
