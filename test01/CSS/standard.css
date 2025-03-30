@@ -1,8 +1,5 @@
 .standard{
     max-width: 1400px;
-    /* Largura maxima de 1400 pixels para o conteudo*/
     width: 100%;
-    /* se diminuir vai pra 100% da tela*/
     margin: 0 auto;
-    /* 0 pra cima e baixo e o auto pra empurrar para o meio da tela */
 }

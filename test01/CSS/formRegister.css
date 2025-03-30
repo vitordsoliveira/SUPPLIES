@@ -1,26 +1,22 @@
 /*############################## REGISTER FORM #####################################*/
 
 .backgroundRegister {
-    /* Background para a aba de registro */
     background-image: url('../IMG/backgroundRegister2.jpg');
-    background-size: cover; /* A imagem vai cobrir todo o fundo */
-    background-position: center; /* A imagem vai ficar centralizada */
-    background-repeat: no-repeat; /* A imagem não vai se repetir */
-    width: 100%; /* Largura 100% da tela */
-    height: 100vh; /* Altura 100% da altura da janela */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
 
-/*Ajustes da logo, para ficar ao lado do titulo*/
 .logoRegister ul {
     display: flex;
-    padding: 0; /* Remove o padding */
-    margin: 0; /* Remove a margem */
 }
 
 .logoRegister li {
-    list-style-type: none; /* Remove os pontos das listas */
-    display: flex; /* Para alinhar o texto e a imagem na mesma linha */
-    align-items: center; /* Alinha verticalmente os itens */
+    list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 .logoRegister li:nth-child(2){
@@ -29,15 +25,14 @@
     margin-top: -8%;
 }
 
-/* Modificações no button "Cadastrar {cadUser()}" */
 .btnCadUser {
-    color: white; /* Cor da letra do botão */
-    background-color: black; /* Cor do botão */
-    border-radius: 5px; /* Arredondamento do botão */
-    padding: 8px; /* Tamanho do botão */
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 8px;
 }
 
-.passwordRqrDiv { /* Ajustes para os required da password */
+.passwordRqrDiv {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
