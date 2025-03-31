@@ -1,0 +1,40 @@
+/*############################## REGISTER FORM #####################################*/
+
+.backgroundRegister {
+    background-image: url('../IMG/backgroundRegister2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.logoRegister ul {
+    display: flex;
+}
+
+.logoRegister li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.logoRegister li:nth-child(2){
+    width: 15%;
+    margin-left: 65%;
+    margin-top: -8%;
+}
+
+.btnCadUser {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.passwordRqrDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 18%;
+}
