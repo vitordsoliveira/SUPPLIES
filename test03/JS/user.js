@@ -1,13 +1,19 @@
-async function cadUser(){
-    let name = IDname
-    let email = IDemail
-    let userType = 1
-    let password = IDpassword
-    let cpf_cnpj = IDcpf_cnpj
-    let termos = 1
-    let birthday = IDbirthday
+async function cadUser() {
+    let name = document.getElementById('IDname').value;
 
-    dados = {        
+    let email = document.getElementById('IDemail').value;
+
+    let userType = 1;
+
+    let password = document.getElementById('IDpassword').value;
+
+    let cpf_cnpj = document.getElementById('IDcpf_cnpj').value;
+
+    let termos = 1;
+
+    let birthday = document.getElementById('IDbirthday').value;
+
+    let dados = {        
         "name": name,
         "email": email,
         "user_type_id": userType,
@@ -15,25 +21,24 @@ async function cadUser(){
         "cpf_cnpj": cpf_cnpj,
         "terms": termos,
         "birthday": birthday
-    }
+    };
 
-    let api = await fetch(
-        "https://go-wash-api.onrender.com/api/user",{
-            method:"POST",
-            body:JSON.stringify(dados),
-            headers:{
-                'Content-Type':'application/json'
-            }
+    url = "https://go-wash-api.onrender.com/api/user"
+
+    console.log("Dados enviados:", dados); // Adicione esta linha para verificar os dados
+
+    let api = await fetch(url ,{
+            method: "POST",
+            body: JSON.stringify(dados),
+            headers:{'Content-Type': 'application/json'}
         }
     );
-    if(api.ok){
-        let response = await api.json()
+    
+    if (api.ok) {
+        let response = await api.json();
         console.log(response);
-        return
+        return;
     }
-    let responseError = await api.json()
+    let responseError = await api.json();
     console.log(responseError);
 }
-        
-    
-
