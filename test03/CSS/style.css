@@ -34,7 +34,6 @@ footer{
 .loginregister ul {
     display: flex;
     margin-top: 8%;
-    margin-left: -25%;
 }
 
 .loginregister li{
@@ -71,6 +70,7 @@ footer{
     width: 230px;
     padding: 20px;
     text-align: center;
+    margin-right: 2%;
 }
 
 .productCard img {
