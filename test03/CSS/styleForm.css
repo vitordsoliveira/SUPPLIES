@@ -1,14 +1,20 @@
 #userRegisterForm{
     margin: 0 auto;
-    width: 350px;
+    width: 550px;
+    margin-top: 5%;
 }
 
 input{
     width: 100%;
+    padding: 1%;
+}
+
+.inputRegister{
+    margin-top: 15px;
 }
 
 .logoCad{
-    margin-left: 30%;
+    margin-left: 33%;
 }
 
 .btnCadUser{
@@ -16,7 +22,7 @@ input{
     color: #fff;
     background-color: black;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 10.5%;
 }
 
 .btnCadUser:hover{
