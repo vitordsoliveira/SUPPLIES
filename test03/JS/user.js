@@ -36,5 +36,6 @@ async function cadUser() {
     } else {
         let response = await api.json();
         console.log(response);
+        alert("CADASTRO NÃO REALIZADO COM SUCESSO!")
     }
 }
