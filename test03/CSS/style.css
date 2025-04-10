@@ -46,13 +46,13 @@ body {
 }
 
 .loginregister li {
-    border: 2px solid #ffffff;      
+    border: 2px solid #ffffff;
     border-radius: 15px;
     margin-left: 15px;
     padding: 10px;
 }
 
-.loginregister li:hover{
+.loginregister li:hover {
     background-color: #333333cc;
 }
 
@@ -118,6 +118,11 @@ body {
     background-color: #333;
     padding: 15px;
 }
+
+.footerH2 h2 {
+    font-weight: 600;
+}
+
 .footerH1 {
     position: fixed;
     bottom: 0;
@@ -126,12 +131,9 @@ body {
     color: white;
     text-align: center;
     padding: 15px;
+    font-weight: 600;
 }
 
-
-
-
-
-
-
-
+.footerH1 h2 {
+    font-weight: 600;
+}
