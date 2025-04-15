@@ -4,7 +4,7 @@ async function logUser() {
 
     let password = document.getElementById('IDpassword').value;
 
-    let url = 'https://go-wash-api.onrender.com/api/login';
+    let location = 'https://go-wash-api.onrender.com/api/login';
 
     let data = {        
         "email": email,
@@ -12,7 +12,7 @@ async function logUser() {
         "user_type_id": 1
     };
 
-    let api = await fetch(url, {
+    let api = await fetch(location, {
         method: "POST",
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' }
@@ -29,4 +29,5 @@ async function logUser() {
         alert("LOGIN NÃO REALIZADO!")
     }
 }
+
 
