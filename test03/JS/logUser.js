@@ -21,16 +21,11 @@ async function logUser() {
     if (api.ok) {
         let response = await api.json();
         console.log(response);
-
         alert("LOGIN REALIZADO COM SUCESSO!")
-        
         localStorage.setItem('email', JSON.stringify(email));
-
         localStorage.setItem('password', JSON.stringify(password));
-
         getUserData();
         return
-
     } else {
         let response = await api.json();
         console.log(response);
@@ -43,5 +38,3 @@ function getUserData(){
     let password = JSON.parse(localStorage.getItem('password'));
     console.log(email, password);
 }
-
-
