@@ -1,8 +1,8 @@
 async function logUser() {
 
-    let email = document.getElementById('IDemail').value;
+    let email = document.getElementById('IDemailLog').value;
 
-    let password = document.getElementById('IDpassword').value;
+    let password = document.getElementById('IDpasswordLog').value;
 
     let location = 'https://go-wash-api.onrender.com/api/login';
 
