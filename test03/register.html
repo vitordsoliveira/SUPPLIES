@@ -9,12 +9,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="CSS/formCad.css">
 
     <script src="JS/cadUser.js"></script>
     <script src="JS/logOut.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask.min.js"></script>
 
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/reset.css">
@@ -37,7 +40,7 @@
                 <li class="buttonRL">
                     <a href="index.html" target="_blank">HOME</a>
                 </li>
-                    <li class="buttonRL">
+                <li class="buttonRL">
                     <a href="aboutUs.html" target="_blank">ABOUT US</a>
                 </li>
                 <li class="buttonRL">
@@ -63,7 +66,7 @@
             <div class="inputRegister">
                 <div>
                     <label for="IDname">Nome: </label>
-                    <input type="text" id="IDname"/>
+                    <input type="text" id="IDname" />
                 </div>
             </div>
         </div>
@@ -82,6 +85,11 @@
                     <input type="text" id="IDcpf_cnpj" />
                 </div>
             </div>
+            <script>
+                var input = document.getElementById('IDcpf_cnpj');
+                var cpf = new Inputmask('999.999.999-99');
+                cpf.mask(input);
+            </script>
 
         </div>
 
@@ -97,6 +105,35 @@
             </div>
         </div>
 
+        <div class="passwordRqrDiv">
+            <ul id="passwordRequirements">
+                <li id="charCount" style="color: red;">Pelo menos 8 caracteres</li>
+                <li id="specialChar" style="color: red;">Caractere especial</li>
+                <li id="number" style="color: red;">Número</li>
+                <li id="hasCharM" style="color: red;">Letra Maiuscúla</li>
+            </ul>
+        </div>
+        
+        <script>
+            document.getElementById('IDpassword').addEventListener('input', function () {
+                const password = this.value;
+                const isValidLength = password.length >= 8;
+                const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+                const hasNumber = /\d/.test(password);
+                const hasCharM = /[A-Z]/.test(password);
+        
+                document.getElementById('charCount').style.color = isValidLength ? 'green' : 'red';
+                document.getElementById('specialChar').style.color = hasSpecialChar ? 'green' : 'red';
+                document.getElementById('number').style.color = hasNumber ? 'green' : 'red';
+                document.getElementById('hasCharM').style.color = hasCharM ? 'green' : 'red';
+            });
+        </script>
+        
+
+        <div>
+            <button></button>
+        </div>
+
         <div>
             <input class="btnCadUser" type="button" value="CADASTRAR" onclick="cadUser()">
         </div>
@@ -108,4 +145,5 @@
         <h2>© COPYRIGHT SUPPLIES 2025</h2>
     </div>
 </footer>
+
 </html>

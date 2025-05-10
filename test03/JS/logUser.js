@@ -24,6 +24,7 @@ async function logUser() {
         alert("LOGIN REALIZADO COM SUCESSO!")
         localStorage.setItem('email', JSON.stringify(email));
         localStorage.setItem('password', JSON.stringify(password));
+        window.location = "listagem.html";
         getUserData();
         return
     } else {
