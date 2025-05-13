@@ -1,0 +1,33 @@
+/* Banner de Introdução */
+.banner {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 20px;
+  }
+
+  .banner h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .banner p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .btnScroll {
+    background-color: #00d084;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btnScroll:hover {
+    background-color: #00a76b;
+  }
+  
