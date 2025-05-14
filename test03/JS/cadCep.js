@@ -5,7 +5,7 @@ async function cadastroEndereco() {
     let numero = document.getElementById('numeroCEP').value;
     let complemento = document.getElementById('complementoCEP').value;
     
-    let token = JSON.parse(localStorage.getItem('user'));
+    let token = JSON.parse(localStorage.getItem('token'));
 
     let novoEndereco = {
         title: titulo,
