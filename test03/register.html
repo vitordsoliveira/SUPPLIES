@@ -25,28 +25,30 @@
 
 </head>
 
-<header>
-    <div class="topBar">
-      <div class="tittleLogo">
-        <a href="index.html"><img src="IMG/logo(2).png" alt="Logo SUPPLIES" /></a>
-        <h1 style="display: none;">SUPPLEMENTS, FITNESS, NUTRITION, HEALTH</h1>
-      </div>
 
-      <div class="loginregister">
-        <nav>
-          <ul>
-            <li class="buttonRL"><a href="index.html" target="_blank">HOME</a></li>
-            <li class="buttonRL"><a href="aboutUs.html" target="_blank">ABOUT US</a></li>
-            <li class="buttonRL"><a href="register.html" target="_blank">REGISTER</a></li>
-            <li class="buttonRL"><a href="login.html" target="_blank">LOGIN</a></li>
-            <li class="buttonRL"><a href="https://go-wash-api.onrender.com/logout" target="_blank">LOG OUT</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
 
 <body>
+
+    <header>
+        <div class="topBar">
+            <div class="tittleLogo">
+                <a href=""><img src="IMG/logo(2).png" alt=""></a>
+            </div>
+            <div class="loginregister">
+                <nav>
+                    <ul>
+                        <li class="buttonRL"><a href="index.html" target="_blank">HOME</a></li>
+                        <li class="buttonRL"><a href="aboutUs.html" target="_blank">ABOUT US</a></li>
+                        <li class="buttonRL"><a href="register.html" target="_blank">REGISTER</a></li>
+                        <li class="buttonRL"><a href="login.html" target="_blank">LOGIN</a></li>
+                        <li class="buttonRL"> <input class="" type="button" value="LOG OUT" onclick="logOut()"></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
     <form id="userRegisterForm">
         <div class="logoRegister">
             <div class="logoCad">
@@ -113,7 +115,7 @@
                 const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
                 const hasNumber = /\d/.test(password);
                 const hasCharM = /[A-Z]/.test(password);
-        
+
                 document.getElementById('charCount').style.color = isValidLength ? 'green' : 'red';
                 document.getElementById('specialChar').style.color = hasSpecialChar ? 'green' : 'red';
                 document.getElementById('number').style.color = hasNumber ? 'green' : 'red';
@@ -124,7 +126,7 @@
         <div>
             <input class="btnCadUser" type="button" value="CADASTRAR" onclick="cadUser()">
         </div>
-        
+
     </form>
 </body>
 

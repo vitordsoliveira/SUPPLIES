@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPPLIES</title>
+    <title>Listagem de Endereço</title>
     <link rel="shortcut icon" type="imagex/png" href="IMG/logo2.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,15 +20,13 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/standard.css">
-    <link rel="stylesheet" href="CSS/listagem.css">
+    <link rel="stylesheet" href="CSS/tableCep.css">
 
     <header>
         <div class="topBar">
             <div class="tittleLogo">
-                <a href="index.html"><img src="IMG/logo(2).png" alt="Logo SUPPLIES" /></a>
-                <h1 style="display: none;">SUPPLEMENTS, FITNESS, NUTRITION, HEALTH</h1>
+                <a href=""><img src="IMG/logo(2).png" alt=""></a>
             </div>
-
             <div class="loginregister">
                 <nav>
                     <ul>
@@ -36,8 +34,7 @@
                         <li class="buttonRL"><a href="aboutUs.html" target="_blank">ABOUT US</a></li>
                         <li class="buttonRL"><a href="register.html" target="_blank">REGISTER</a></li>
                         <li class="buttonRL"><a href="login.html" target="_blank">LOGIN</a></li>
-                        <li class="buttonRL"><a href="https://go-wash-api.onrender.com/logout" target="_blank">LOG
-                                OUT</a></li>
+                        <li class="buttonRL"><input class="" type="button" value="LOG OUT" onclick="logOut()"></li>
                     </ul>
                 </nav>
             </div>
@@ -45,33 +42,36 @@
     </header>
 
 <body>
+    <div class="tableCep">
+        <div class="h2Cep">
+            <h2>ENDEREÇOS CADASTRADOS</h2>
+        </div>
 
-    <h2>ENDEREÇOS CADASTRADOS</h2>
-    <table id="tableList" class="tableList" style="background-color: white;">
-        <tr>
-            <th>Título </th>
-            <th>Endereço </th>
-            <th>Número</th>
-            <th>Bairro </th>
-            <th>CEP</th>
-            <th>Complemento</th>
-            <th>ATUALZAR </th>
-            <th>DELETAR </th>
-        </tr>
-        <tr>
-            <td>Casa</td>
-            <td>Rua Aveina</td>
-            <td>244</td>
-            <td>Bairro Novo</td>
-            <td>00304</td>
-            <td>Complemento da minha casa</td>
-            <td><a href="">ATUALIZAR</a></td>
-            <td><a href="">DELETAR</a></td>
-        </tr>
-    </table>
-    <div>
-        <a href="cadCep.html">CADASTRAR</a>
+        <table id="tableList" class="tableList" style="background-color: white;">
+            <tr>
+                <th>Título </th>
+                <th>Endereço </th>
+                <th>Número</th>
+                <th>CEP</th>
+                <th>Complemento</th>
+                <th>ATUALZAR </th>
+                <th>DELETAR </th>
+            </tr>
+            <tr>
+                <td id="tituloCEP"></td>
+                <td id="enderecoCEP"></td>
+                <td id="numeroCEP"></td>
+                <td id="cepCEP"></td>
+                <td id="complementoCEP"></td>
+                <td><a href="">ATUALZAR</a></td>
+                <td><a href="">DELETAR</a></td>
+            </tr>
+        </table>
+        <div>
+            <a href="cadCep.html">CADASTRAR</a>
+        </div>
     </div>
+
 </body>
 
 <footer>

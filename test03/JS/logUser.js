@@ -24,6 +24,7 @@ async function logUser() {
         alert("LOGIN REALIZADO COM SUCESSO!")
         localStorage.setItem('email', JSON.stringify(email));
         localStorage.setItem('password', JSON.stringify(password));
+        localStorage.setItem('token', response.access_token);
         window.location = "listagem.html";
         getUserData();
         return

@@ -19,3 +19,12 @@ th {
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+
+.h2Cep{
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    font-size: 26px;
+}

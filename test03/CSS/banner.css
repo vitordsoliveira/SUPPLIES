@@ -1,11 +1,13 @@
-/* Banner de Introdução */
 .banner {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-    margin-top: 20px;
-  }
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 20px;
+  border-radius: 50px;
+  width: 90%;
+  margin-left: 3.5%;
+}
 
   .banner h2 {
     font-size: 2rem;
@@ -14,7 +16,7 @@
   
   .banner p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
   
   .btnScroll {
@@ -25,8 +27,8 @@
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-  }
-  
+    margin-top: 20px;
+  }  
   .btnScroll:hover {
     background-color: #00a76b;
   }

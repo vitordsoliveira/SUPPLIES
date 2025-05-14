@@ -10,6 +10,14 @@ async function listagem() {
     if (api.ok) {
         let response = await api.json();
         console.log(response);
+
+        let endereco = await response.json();
+        document.getElementById("tituloCEP").textContent = endereco.titulo || '';
+        document.getElementById("enderecoCEP").textContent = endereco.endereco || '';
+        document.getElementById("numeroCEP").textContent = endereco.numero || '';
+        document.getElementById("cepCEP").textContent = endereco.cep || '';
+        document.getElementById("complementoCEP").textContent = endereco.complemento || '';
+
     } else {
         console.log("Erro ao listar");
     }
