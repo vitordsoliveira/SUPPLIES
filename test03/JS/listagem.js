@@ -4,10 +4,8 @@ async function listagem() {
 
     let api = await fetch("https://go-wash-api.onrender.com/api/auth/address", {
         method: "GET",
-        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer {token}'}
     });
-
-
     let endereco = await response.json();
 
     document.getElementById("titulo").textContent = endereco.title || '';
