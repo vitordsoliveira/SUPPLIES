@@ -4,8 +4,8 @@ async function cadastroEndereco() {
     let endereco = document.getElementById('enderecoCEP').value;
     let numero = document.getElementById('numeroCEP').value;
     let complemento = document.getElementById('complementoCEP').value;
-    
-    let token = JSON.parse(localStorage.getItem('token'));
+
+    let token = localStorage.getItem('token'); 
 
     let novoEndereco = {
         title: titulo,
@@ -19,19 +19,18 @@ async function cadastroEndereco() {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer {token}'
+            'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify(novoEndereco)
-    }
-);
+    });
 
     if (api.ok) {
         let response = await api.json();
         console.log("Endereço cadastrado:", response);
+        alert("Cadastro com Sucesso");
         window.location = "listagem.html";
-        alert("Cadastro com Sucesso")
     } else {
         console.log("Erro ao cadastrar");
-        alert("Erro ao cadastrar")
+        alert("Erro ao cadastrar");
     }
 }

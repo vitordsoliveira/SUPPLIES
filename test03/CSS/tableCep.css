@@ -28,3 +28,27 @@ tr:nth-child(even) {
 h2{
     font-size: 26px;
 }
+
+.tabela-scroll {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+
+.tabela-scroll table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabela-scroll th,
+.tabela-scroll td {
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-scroll thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f5f5f5;
+    z-index: 1;
+}
