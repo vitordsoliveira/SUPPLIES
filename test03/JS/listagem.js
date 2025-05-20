@@ -19,15 +19,15 @@ async function listagem() {
         lista.forEach(item => {
             const linha = document.createElement("tr");
 
-            linha.innerHTML = `
+        linha.innerHTML = `
         <td>${item.title}</td>
         <td>${item.address}</td>
         <td>${item.number}</td>
         <td>${item.cep}</td>
         <td>${item.complement}</td>
-        <td><button>Atualizar</button></td>
-        <td><button>Deletar</button></td> `;
-            tabela.appendChild(linha);
+        <td><input class="btnAttCep btnInputCep" value="Atualizar"></input></td>
+        <td><input class="btnDelCep btnInputCep" value="Deletar"></input></td> `;
+        tabela.appendChild(linha);
         });
 
     } else {
