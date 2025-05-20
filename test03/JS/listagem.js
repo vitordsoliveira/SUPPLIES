@@ -25,8 +25,9 @@ async function listagem() {
         <td>${item.number}</td>
         <td>${item.cep}</td>
         <td>${item.complement}</td>
-        <td><button>Atualizar</button></td>
-        <td><button>Deletar</button></td> `;
+        <td><input class="" type="button" value="Atualizar" onclick="attCep()"></input></td>
+        <td><input class="" type="button" value="Deletar" onclick="delCep('${item.id || item._id}')" /></td>`;
+
             tabela.appendChild(linha);
         });
 
