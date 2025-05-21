@@ -1,7 +1,7 @@
 async function delCep(id) {
     const confirmDelete = confirm("Você realmente quer deletar este endereço?");
     if (!confirmDelete) {
-        return; // Sai da função se o usuário cancelar
+        return;
     }
 
     const token = localStorage.getItem('token');
@@ -28,7 +28,4 @@ async function delCep(id) {
         alert("Erro na comunicação com o servidor.", "error");
     }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 5a251d793044a765e367143193adfe1d60d5166c

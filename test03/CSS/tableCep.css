@@ -17,7 +17,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #dddddd;
 }
 
 .h2Cep {
@@ -76,10 +76,16 @@ h2 {
     border: none;
     color: #fff;
     padding: 5px 15px;
-    margin-left: 21%;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+    margin-left: 21%;
+}
+
+.btnInputCep td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnAtt {
