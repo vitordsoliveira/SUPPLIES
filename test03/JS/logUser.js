@@ -1,12 +1,9 @@
 async function logUser() {
-
     let email = document.getElementById('IDemailLog').value;
-
     let password = document.getElementById('IDpasswordLog').value;
-
     let location = 'https://go-wash-api.onrender.com/api/login';
 
-    let data = {        
+    let data = {
         "email": email,
         "password": password,
         "user_type_id": 1
@@ -21,22 +18,19 @@ async function logUser() {
     if (api.ok) {
         let response = await api.json();
         console.log(response);
-        alert("LOGIN REALIZADO COM SUCESSO!")
+        alert("LOGIN REALIZADO COM SUCESSO!");
+
+        // Salva no localStorage
         localStorage.setItem('email', JSON.stringify(email));
         localStorage.setItem('password', JSON.stringify(password));
         localStorage.setItem('token', response.access_token);
+        localStorage.setItem('userName', response.user.name); // Supondo que a resposta tenha isso
+
         window.location = "listagem.html";
-        getUserData();
-        return
+        return;
     } else {
         let response = await api.json();
         console.log(response);
-        alert("LOGIN NÃO REALIZADO!")
+        alert("LOGIN NÃO REALIZADO!");
     }
-}
-
-function getUserData(){
-    let email = JSON.parse(localStorage.getItem('email'));
-    let password = JSON.parse(localStorage.getItem('password'));
-    console.log(email, password);
 }
