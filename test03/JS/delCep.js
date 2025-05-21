@@ -1,4 +1,9 @@
 async function delCep(id) {
+    const confirmDelete = confirm("Você realmente quer deletar este endereço?");
+    if (!confirmDelete) {
+        return; // Sai da função se o usuário cancelar
+    }
+
     const token = localStorage.getItem('token');
 
     try {
@@ -12,15 +17,18 @@ async function delCep(id) {
 
         if (response.ok) {
             console.log("Endereço deletado com sucesso.");
-            showMessage("Endereço deletado com sucesso!", "success");
+            alert("Endereço deletado com sucesso!", "success");
             location.reload();
         } else {
             console.log("Erro ao deletar endereço.");
-            showMessage("Erro ao deletar endereço.", "error");
+            alert("Erro ao deletar endereço.", "error");
         }
     } catch (error) {
         console.error("Erro na requisição:", error);
-        showMessage("Erro na comunicação com o servidor.", "error");
+        alert("Erro na comunicação com o servidor.", "error");
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a251d793044a765e367143193adfe1d60d5166c
