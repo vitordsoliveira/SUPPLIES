@@ -20,12 +20,12 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-.h2Cep{
+.h2Cep {
     display: flex;
     align-items: center;
 }
 
-h2{
+h2 {
     font-size: 26px;
 }
 
@@ -43,7 +43,7 @@ h2{
 .tabela-scroll th,
 .tabela-scroll td {
     padding: 10px;
-    
+
 }
 
 .tabela-scroll thead th {
@@ -53,25 +53,68 @@ h2{
     z-index: 1;
 }
 
-.buttonCadCep{
+.buttonCadCep {
     margin: 15px 0px;
+    margin-left: 15px;
 }
 
 .buttonCadCep a {
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #00d084cb;
     border-radius: 10px;
-    color: #333;
-    transition: background-color 0.4s ease, color 0.4s ease;
-}
-
-.buttonCadCep a:hover{
-    background-color: #333;
     color: #f9f9f9;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-td:nth-child(even) .btnInputCep {
+.buttonCadCep a:hover {
+    background-color: #00d084;
+    color: #f9f9f9;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.btnInputCep {
     border: none;
-    background-color: #f9f9f9;
+    color: #fff;
+    padding: 5px 15px;
+    margin-left: 21%;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btnAtt {
+    background-color: #1f7d8dce;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.btnDel {
+    background-color: #8d1f1fce;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.btnAtt:hover {
+    background-color: #1f7d8d;
+    transition: background-color 0.2s ease, color 0.4s ease;
+}
+
+.btnDel:hover {
+    background-color: #8d1f1f;
+    transition: background-color 0.2s ease, color 0.4s ease;
+}
+
+.h2Cep {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    width: 90%;
+    margin-left: 3.5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.h2Cep h2 {
+    font-size: 2rem;
 }

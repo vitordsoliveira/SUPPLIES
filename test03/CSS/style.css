@@ -37,6 +37,21 @@ a{
     transition: all 0.3s;
 }
 
+.buttonRL button {
+    color: #961e1e;
+    background: none;
+    padding: 8px 16px;
+    border: 1px solid #961e1e;
+    border-radius: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-top: -15%;
+}
+
+.buttonRL button:hover {
+    background-color: #ffffff22;
+}
+
 .buttonRL a:hover {
     background-color: #ffffff22;
 }

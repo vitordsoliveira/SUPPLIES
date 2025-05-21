@@ -24,21 +24,3 @@ async function delCep(id) {
     }
 }
 
-function showMessage(mensagem, tipo = "info") {
-    let msgBox = document.getElementById("mensagem");
-
-    if (!msgBox) {
-        msgBox = document.createElement("div");
-        msgBox.id = "mensagem";
-        msgBox.style.marginTop = "10px";
-        document.body.prepend(msgBox);
-    }
-
-    msgBox.innerText = mensagem;
-    msgBox.style.display = "block";
-    msgBox.style.padding = "10px";
-    msgBox.style.borderRadius = "5px";
-    msgBox.style.color = tipo === "success" ? "green" : "red";
-}
-
-
