@@ -22,6 +22,7 @@ async function logUser() {
         localStorage.setItem('email', JSON.stringify(email));
         localStorage.setItem('password', JSON.stringify(password));
         localStorage.setItem('token', response.access_token);
+        window.location = "listagem.html";
         return;
     } else {
         let response = await api.json();
