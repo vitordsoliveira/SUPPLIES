@@ -19,14 +19,9 @@ async function logUser() {
         let response = await api.json();
         console.log(response);
         alert("LOGIN REALIZADO COM SUCESSO!");
-
-        // Salva no localStorage
         localStorage.setItem('email', JSON.stringify(email));
         localStorage.setItem('password', JSON.stringify(password));
         localStorage.setItem('token', response.access_token);
-        localStorage.setItem('userName', response.user.name); // Supondo que a resposta tenha isso
-
-        window.location = "listagem.html";
         return;
     } else {
         let response = await api.json();
