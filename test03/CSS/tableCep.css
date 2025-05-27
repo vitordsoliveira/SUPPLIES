@@ -124,3 +124,7 @@ h2 {
 .h2Cep h2 {
     font-size: 2rem;
 }
+
+.footer h2{
+    font-size: 15px;
+}
