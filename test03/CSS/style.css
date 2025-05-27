@@ -77,11 +77,27 @@ a{
     transform: scale(1.05);
 }
 
+.productCardLocked {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    width: 250px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
 .productCard img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
+
+.productCardLocked img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
 
 .productCard h2 {
     font-size: 1.3rem;
@@ -108,6 +124,16 @@ a{
 
 .buyButton:hover {
     background-color: #00a76b;
+}
+
+.buyButtonLocked {
+    background-color: #d00000;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 footer{
