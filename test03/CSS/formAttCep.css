@@ -14,11 +14,11 @@ input {
     border-radius: 5px;
 }
 
-.inputRegister {
+.inputAtt {
     margin-top: 15px;
 }
 
-.inputRegister label {
+.inputAtt label {
     color: #fff;
 }
 
@@ -26,7 +26,7 @@ input {
     margin-left: 33%;
 }
 
-.btnCadUser {
+.btnAttCep {
     margin-top: 10px;
     color: #fff;
     background-color: #000000;
@@ -34,8 +34,7 @@ input {
     margin-left: 10.5%;
 }
 
-.btnCadUser:hover {
+.btnAttCep:hover {
     background-color: gray;
 }
 
-/*############## LOGIN ########################*/
