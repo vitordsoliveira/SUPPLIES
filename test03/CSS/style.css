@@ -64,6 +64,14 @@ a{
     padding: 2rem;
 }
 
+.listProductsLocked {
+    display: flex!important;
+    justify-content: center!important;
+    flex-wrap: wrap!important;
+    gap: 2rem!important;
+    padding: 2rem!important;
+}
+
 .productCard {
     background-color: #1e1e1e;
     border-radius: 10px;
@@ -95,6 +103,18 @@ a{
 .productCardLocked img {
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.productCardLocked h2 {
+    font-size: 1.3rem;
+    color: #d00000;
+    margin-bottom: 0.5rem;
+}
+
+.productCardLocked p {
+    font-size: 0.95rem;
+    color: #ccc;
     margin-bottom: 1rem;
 }
 
@@ -134,6 +154,10 @@ a{
     border-radius: 6px;
     font-weight: bold;
     transition: background-color 0.3s;
+}
+
+.buyButtonLocked:hover {
+    background-color: #ff0000;
 }
 
 footer{

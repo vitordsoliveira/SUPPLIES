@@ -34,7 +34,9 @@
   <header>
     <div class="topBar">
       <div class="tittleLogo">
-        <a href=""><img src="IMG/logo(2).png" alt=""></a>
+        <a href="#" onclick="toggleLockedCard(event)">
+          <img src="IMG/logo(2).png" alt="">
+        </a>
       </div>
       <div class="loginregister">
         <nav>
@@ -119,12 +121,66 @@
         <p>Deliciosa barra com alto teor de proteína, ideal para um lanche pós-treino.</p>
         <button class="buyButton">Comprar</button>
       </div>
-      <div class="productCardLocked">
-        <img src="PRODUTOS/produto9.jpg" alt="Locked" />
-        <h2>LOCKED</h2>
-        <p>produtinho mágico...</p>
-        <button class="buyButtonLocked">LOCKED</button>
-      </div>
+
+      <article class="listProductsLocked" id="lockedCard" style="display: none!important;">
+        <div class="productCardLocked">
+          <img src="PRODUTOS/produto9.jpg" alt="Locked" />
+          <h2>TREMBOLONA</h2>
+          <p>PARA QUEM QUER FICAR BODYBUILDER PORR#<BR>
+            BIIIIIIIIIRRRRRRRRLLLLLL
+          </p>
+          <button class="buyButtonLocked">COMPRAR</button>
+        </div>
+
+        <div class="productCardLocked">
+          <img src="PRODUTOS/produto10.jpeg" alt="Locked" />
+          <h2>CREATINA TURBO</h2>
+          <p>FORÇA EXTRA PRA DAR AQUELE ÚLTIMO REP<br>
+            NÃO É MAGIA, É CIÊNCIA (E UM POUCO DE LOUCURA)
+          </p>
+          <button class="buyButtonLocked">COMPRAR</button>
+        </div>
+
+        <div class="productCardLocked">
+          <img src="PRODUTOS/produto11.jpeg" alt="Locked" />
+          <h2>WHEY DO OGRO</h2>
+          <p>35G DE PROTEÍNA E 200G DE RAIVA POR SCOOP<br>
+            IDEAL PARA TREINAR COM ÓDIO!
+          </p>
+          <button class="buyButtonLocked">COMPRAR</button>
+        </div>
+
+        <div class="productCardLocked">
+          <img src="PRODUTOS/produto12.jpeg" alt="Locked" />
+          <h2>PRÉ-TREINO INSANO</h2>
+          <p>1 DOSE = 10KM DE CORRIDA MENTAL<br>
+            CUIDADO: VOCÊ VAI CONVERSAR COM OS PESOS
+          </p>
+          <button class="buyButtonLocked">COMPRAR</button>
+        </div>
+
+        <div class="productCardLocked">
+          <img src="PRODUTOS/produto13.jpeg" alt="Locked" />
+          <h2>BCAA DO APOCALIPSE</h2>
+          <p>RECUPERAÇÃO ATÉ DA ALMA<br>
+            BEBEU? AGORA VIRA MONSTRO!
+          </p>
+          <button class="buyButtonLocked">COMPRAR</button>
+        </div>
+
+        <script>
+          function toggleLockedCard(event) {
+            event.preventDefault();
+
+            const confirmHardcore = confirm("Tem certeza que deseja ativar o modo HARDCORE?");
+            if (!confirmHardcore) return;
+
+            const card = document.getElementById('lockedCard');
+            card.style.display = card.style.display === 'none' ? 'block' : 'none';
+          }
+        </script>
+      </article>
+
     </div>
 
 
