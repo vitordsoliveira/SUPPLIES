@@ -1,31 +1,32 @@
-#cepAtualizarForm{
+#cepAtualizarForm {
     margin: 0 auto;
     width: 550px;
     margin-top: 5%;
     background-color: #00000049;
     padding: 20px;
     border-radius: 15px;
+    margin-bottom: 5%;
 }
 
-input{
+input {
     width: 100%;
     padding: 1%;
     border-radius: 5px;
 }
 
-.inputRegister{
+.inputRegister {
     margin-top: 15px;
 }
 
-.inputRegister label{
+.inputRegister label {
     color: #fff;
 }
 
-.logoCad{
+.logoCad {
     margin-left: 33%;
 }
 
-.btnCadUser{
+.btnCadUser {
     margin-top: 10px;
     color: #fff;
     background-color: #000000;
@@ -33,8 +34,8 @@ input{
     margin-left: 10.5%;
 }
 
-.btnCadUser:hover{
+.btnCadUser:hover {
     background-color: gray;
-}  
+}
 
 /*############## LOGIN ########################*/
