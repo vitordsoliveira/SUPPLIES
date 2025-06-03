@@ -64,6 +64,3 @@ async function cadUser() {
         alert("CADASTRO NÃO REALIZADO!")
     }
 }
-
-
-

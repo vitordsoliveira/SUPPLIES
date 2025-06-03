@@ -28,4 +28,3 @@ async function delCep(id) {
         alert("Erro na comunicação com o servidor.", "error");
     }
 }
-
