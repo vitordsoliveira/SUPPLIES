@@ -1,0 +1,25 @@
+.aboutUs {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.aboutUs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffa200;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.aboutUs p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
