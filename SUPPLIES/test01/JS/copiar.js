@@ -5,6 +5,7 @@ async function copiarCep(id) {
         const response = await fetch(`https://go-wash-api.onrender.com/api/auth/address/${id}`, {
             method: "GET",
             headers: {
+                'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             }
         });
@@ -27,6 +28,7 @@ async function copiarCep(id) {
         const apiResponse = await fetch("https://go-wash-api.onrender.com/api/auth/address", {
             method: "POST",
             headers: {
+                'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(enderecoCopiado)
