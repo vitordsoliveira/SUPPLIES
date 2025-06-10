@@ -1,0 +1,46 @@
+.pesquisaClima {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    width: 90%;
+    margin-left: 3.5%;
+}
+
+.pesquisaClima h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.pesquisaClima {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+.btnClima {
+    background-color: #00d084;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btnClima:hover {
+    background-color: #00a76b;
+}
+
+#inputClima {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+.backClima {
+    background: hsla(0, 0%, 41%, 0.596);
+    border-radius: 20px;padding: 15px 15px;
+}
