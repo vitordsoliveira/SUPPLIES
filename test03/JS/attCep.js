@@ -31,7 +31,9 @@ async function atualizarEndereco() {
             body: JSON.stringify(enderecoAtualizado)
         });
 
-        if (!resposta.ok) throw new Error("Erro ao atualizar endereço.");
+        if (!resposta.ok){
+            alert("Erro ao atualizar endereço.")
+        };
 
         alert("Endereço atualizado com sucesso!");
         window.location.href = "listagem.html";
