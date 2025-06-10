@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #222;
+    background-color: #5b0505;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -72,7 +72,7 @@ nav ul li a {
 .contact-form button {
     display: block;
     width: 100%;
-    background-color: #222;
+    background-color: #5b0505;
     color: white;
     border: none;
     padding: 12px;
@@ -90,6 +90,6 @@ footer {
     text-align: center;
     margin-top: 40px;
     padding: 20px;
-    background-color: #222;
+    background-color: #5b0505;
     color: white;
 }
