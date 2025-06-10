@@ -27,11 +27,15 @@ async function listagem() {
         <td>${item.complement}</td>
         <td class="btnCenter">
         <a href="attCep.html?id=${item.id || item._id}">
-            <input class="btnInputCep btnAtt" type="button" value="ATUALIZAR">
+        <input class="btnInputCep btnAtt" type="button" value="ATUALIZAR">
         </a>
         </td>
-
-        <td class="btnCenter"><input class="btnInputCep btnDel" type="button" value="DELETAR" onclick="delCep('${item.id || item._id}')"/></td>`;
+        
+        <td class="btnCenter"><input class="btnInputCep btnDel" type="button" value="DELETAR" onclick="delCep('${item.id || item._id}')"/></td>
+        
+        <td class="btnCenter"><input class="btnInputCep btnDel" type="button" value="COPIAR" onclick="copiarCep('${item.id || item._id}')"/></td>
+        `
+        ;
         tabela.appendChild(linha);
         });
 
