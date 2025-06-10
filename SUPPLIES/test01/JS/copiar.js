@@ -5,14 +5,14 @@ async function copiarCep(id) {
         const response = await fetch(`https://go-wash-api.onrender.com/api/auth/address/${id}`, {
             method: "GET",
             headers: {
-                'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             }
         });
 
         if (!response.ok) {
-            console.log('Endereço não encontrado na API')
+            console.log('Endereço não encontrado na API');
             alert('Endereço não encontrado na API');
+            return;
         }
 
         const enderecoOriginal = await response.json();
@@ -27,14 +27,13 @@ async function copiarCep(id) {
         const apiResponse = await fetch("https://go-wash-api.onrender.com/api/auth/address", {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(enderecoCopiado)
         });
 
         if (!apiResponse.ok) {
-            alert('Erro ao cadastrar a cópia');
+            return;
         }
 
         alert("Endereço copiado com sucesso!");
